@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Formulario de Registro</title>
+</head>
+<body>
+    <h1>Formulario de Registro</h1>
+    <form action="registrarse.php" method="POST" enctype="multipart/form-data">
+        <h2>Datos del Beneficiario</h2>
+        <div class="inline-group">
+            <div class="form-group">
+                <label for="primerNombre">Primer Nombre:</label>
+                <input type="text" id="primerNombre" name="primerNombre" required>
+            </div>
+            <div class="form-group">
+                <label for="segundoNombre">Segundo Nombre:</label>
+                <input type="text" id="segundoNombre" name="segundoNombre">
+            </div>
+        </div>
+        <div class="inline-group">
+            <div class="form-group">
+                <label for="primerApellido">Primer Apellido:</label>
+                <input type="text" id="primerApellido" name="primerApellido" required>
+            </div>
+            <div class="form-group">
+                <label for="segundoApellido">Segundo Apellido:</label>
+                <input type="text" id="segundoApellido" name="segundoApellido">
+            </div>
+        </div>
+        <div class="inline-group">
+            <div class="form-group">
+                <label for="tipoDocumento">Tipo de Documento:</label>
+                <input type="text" id="tipoDocumento" name="tipoDocumento" required>
+            </div>
+            <div class="form-group">
+                <label for="numeroDocumento">Número de Documento:</label>
+                <input type="text" id="numeroDocumento" name="numeroDocumento" required>
+            </div>
+        </div>
+        <div class="inline-group">
+            <div class="form-group">
+                <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+                <input type="date" id="fechaNacimiento" name="fechaNacimiento" required>
+            </div>
+            <div class="form-group">
+                <label for="edad">Edad:</label>
+                <input type="number" id="edad" name="edad" required>
+            </div>
+        </div>
+        <div class="inline-group">
+        <div class="form-group">
+            <label for="lugarNacimiento">Lugar de Nacimiento:</label>
+            <input type="text" id="lugarNacimiento" name="lugarNacimiento" required>
+        </div>
+        <div class="form-group">
+            <label for="genero">Género:</label>
+            <input type="text" id="genero" name="genero" required>
+        </div>
+    </div>
+    <div class="inline-group">
+        <div class="form-group">
+            <label for="tipoSanguineo">Tipo Sanguíneo:</label>
+            <input type="text" id="tipoSanguineo" name="tipoSanguineo" required>
+        </div>
+        <div class="form-group">
+            <label for="direccion">Dirección:</label>
+            <input type="text" id="direccion" name="direccion" required>
+        </div>
+    </div>
+    <div class="inline-group">
+        <div class="form-group">
+            <label for="estrato">Estrato:</label>
+            <input type="number" id="estrato" name="estrato" required>
+        </div>
+        <div class="form-group">
+            <label for="correoElectronico">Correo Electrónico:</label>
+            <input type="email" id="correoElectronico" name="correoElectronico" required>
+        </div>
+    </div>
+    <div class="inline-group">
+        <div class="form-group">
+            <label for="telefono">Teléfono:</label>
+            <input type="text" id="telefono" name="telefono" required>
+        </div>
+        <div class="form-group">
+            <label for="centroMusical">Centro Musical:</label>
+            <input type="text" id="centroMusical" name="centroMusical" required>
+        </div>
+    </div>
+        <div class="inline-group"></div>
+        <div class="form-group">
+            <label for="instrumentoMusical">Instrumento y Programa Musical:</label>
+            <input type="text" id="instrumentoMusical" name="instrumentoMusical" required>
+        </div>
+        <div class="inline-group">
+            <div class="form-group">
+                <label for="semestre">Semestre:</label>
+                <input type="number" id="semestre" name="semestre" required>
+            </div>
+            <div class="form-group">
+                <label for="ano">Año:</label>
+                <input type="number" id="ano" name="ano" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="fecha">Fecha de Registro:</label>
+            <input type="date" id="fecha" name="fecha" required>
+        </div>
+        <div class="form-group">
+            <label for="fotoBeneficiario">Foto del Beneficiario:</label>
+            <input type="file" id="fotoBeneficiario" name="fotoBeneficiario" required>
+        </div>
+        <h2>IV. Aviso de Privacidad</h2>
+        <p>La Corporación Batuta Meta informa que los datos personales que se están recolectando tendrán un uso responsable y tienen como finalidad la validación de beneficiarios, análisis estadístico y/o demográfico, la elaboración de indicadores y soportar el cumplimiento de obligaciones contractuales con entidades públicas y empresas privadas. En todo momento como titular de la información podrá conocer, actualizar y rectificar esta información, dirigiéndose a nuestro correo electrónico batutameta@gmail.com o personalmente en la Calle 46 No. 28-20 Villavicencio, línea nacional (8) 6848304.</p>
+        <p>La Corporación Batuta Meta se reserva el derecho de verificar los datos suministrados para la admisión; en caso de descubrir alguna falsedad en estos, tendrá la potestad de invalidar la inscripción y otorgar el cupo a otra persona.</p>
+        <p>En caso de que el beneficiario adelante, realice o promueva actividades que atenten contra el buen nombre de La Corporación Batuta Meta o de sus directivos o trabajadores, esta corporación tendrá la potestad de invalidar y/o cancelar la inscripción y otorgará el cupo a otro beneficiario.</p>
+        <div class="form-group">
+            <label for="acepto_terminos">Acepto los términos y condiciones</label>
+            <input type="checkbox" id="acepto_terminos" name="acepto_terminos" required>
+        </div>
+
+        <h2>Datos del Representante</h2>
+        <div class="inline-group">
+            <div class="form-group">
+                <label for="nombresRepresentante">Nombres:</label>
+                <input type="text" id="nombresRepresentante" name="nombresRepresentante" required>
+            </div>
+            <div class="form-group">
+                <label for="apellidosRepresentante">Apellidos:</label>
+                <input type="text" id="apellidosRepresentante" name="apellidosRepresentante" required>
+            </div>
+        </div>
+        <div class="inline-group">
+            <div class="form-group">
+                <label for="tipoDocumentoRepresentante">Tipo de Documento:</label>
+                <input type="text" id="tipoDocumentoRepresentante" name="tipoDocumentoRepresentante" required>
+            </div>
+            <div class="form-group">
+                <label for="numeroDocumentoRepresentante">Número de Documento:</label>
+                <input type="text" id="numeroDocumentoRepresentante" name="numeroDocumentoRepresentante" required>
+            </div>
+        </div>
+        <div class="inline-group">
+            <div class="form-group">
+                <label for="direccionRepresentante">Dirección:</label>
+                <input type="text" id="direccionRepresentante" name="direccionRepresentante" required>
+            </div>
+            <div class="form-group">
+                <label for="barrioRepresentante">Barrio:</label>
+                <input type="text" id="barrioRepresentante" name="barrioRepresentante" required>
+            </div>
+        </div>
+        <div class="inline-group">
+            <div class="form-group">
+                <label for="telefonoRepresentante">Teléfono:</label>
+                <input type="text" id="telefonoRepresentante" name="telefonoRepresentante" required>
+            </div>
+            <div class="form-group">
+                <label for="correoRepresentante">Correo Electrónico:</label>
+                <input type="email" id="correoRepresentante" name="correoRepresentante" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="ocupacionRepresentante">Ocupación:</label>
+            <input type="text" id="ocupacionRepresentante" name="ocupacionRepresentante" required>
+        </div>
+
+        <h2>Datos de la Madre</h2>
+        <div class="inline-group">
+            <div class="form-group">
+                <label for="nombresMadre">Nombres:</label>
+                <input type="text" id="nombresMadre" name="nombresMadre" required>
+            </div>
+            <div class="form-group">
+                <label for="apellidosMadre">Apellidos:</label>
+                <input type="text" id="apellidosMadre" name="apellidosMadre" required>
+            </div>
+        </div>
+        <div class="inline-group">
+            <div class="form-group">
+                <label for="tipoDocumentoMadre">Tipo de Documento:</label>
+                <input type="text" id="tipoDocumentoMadre" name="tipoDocumentoMadre" required>
+            </div>
+            <div class="form-group">
+                <label for="numeroDocumentoMadre">Número de Documento:</label>
+                <input type="text" id="numeroDocumentoMadre" name="numeroDocumentoMadre" required>
+            </div>
+        </div>
+        <div class="inline-group">
+            <div class="form-group">
+                <label for="direccionMadre">Dirección:</label>
+                <input type="text" id="direccionMadre" name="direccionMadre" required>
+            </div>
+            <div class="form-group">
+                <label for="barrioMadre">Barrio:</label>
+                <input type="text  id="barrioMadre" name="barrioMadre" required>
+            </div>
+        </div>
+        <div class="inline-group">
+            <div class="form-group">
+                <label for="telefonoMadre">Teléfono:</label>
+                <input type="text" id="telefonoMadre" name="telefonoMadre" required>
+            </div>
+            <div class="form-group">
+                <label for="correoMadre">Correo Electrónico:</label>
+                <input type="email" id="correoMadre" name="correoMadre" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="ocupacionMadre">Ocupación:</label>
+            <input type="text" id="ocupacionMadre" name="ocupacionMadre" required>
+        </div>
+
+        <h2>Datos del Padre</h2>
+        <div class="inline-group">
+            <div class="form-group">
+                <label for="nombresPadre">Nombres:</label>
+                <input type="text" id="nombresPadre" name="nombresPadre" required>
+            </div>
+            <div class="form-group">
+                <label for="apellidosPadre">Apellidos:</label>
+                <input type="text" id="apellidosPadre" name="apellidosPadre" required>
+            </div>
+        </div>
+        <div class="inline-group">
+            <div class="form-group">
+                <label for="tipoDocumentoPadre">Tipo de Documento:</label>
+                <input type="text" id="tipoDocumentoPadre" name="tipoDocumentoPadre" required>
+            </div>
+            <div class="form-group">
+                <label for="numeroDocumentoPadre">Número de Documento:</label>
+                <input type="text" id="numeroDocumentoPadre" name="numeroDocumentoPadre" required>
+            </div>
+        </div>
+        <div class="inline-group">
+            <div class="form-group">
+                <label for="direccionPadre">Dirección:</label>
+                <input type="text" id="direccionPadre" name="direccionPadre" required>
+            </div>
+            <div class="form-group">
+                <label for="barrioPadre">Barrio:</label>
+                <input type="text" id="barrioPadre" name="barrioPadre" required>
+            </div>
+        </div>
+        <div class="inline-group">
+            <div class="form-group">
+                <label for="telefonoPadre">Teléfono:</label>
+                <input type="text" id="telefonoPadre" name="telefonoPadre" required>
+            </div>
+            <div class="form-group">
+                <label for="correoPadre">Correo Electrónico:</label>
+                <input type="email" id="correoPadre" name="correoPadre" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="ocupacionPadre">Ocupación:</label>
+            <input type="text" id="ocupacionPadre" name="ocupacionPadre" required>
+        </div>
+
+        <input type="submit" value="Registrar">
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+

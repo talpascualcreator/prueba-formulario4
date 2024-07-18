@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Hoja de Inscripción - Batuta</title>
+</head>
+<body>
+    <h1>Hoja de Inscripción</h1>
+    <form action="registrarse.php" method="post" enctype="multipart/form-data" id="inscripcionForm">
+        <div class="form-group">
+            <label for="centroMusical">1. Centro Musical:</label>
+            <input type="text" id="centroMusical" name="centroMusical" required>
+        </div>
+        <div class="inline-group">
+            <div class="form-group">
+                <label for="semestre">2. Semestre:</label>
+                <input type="number" id="semestre" name="semestre" min="1" max="2" required>
+            </div>
+            <div class="form-group">
+                <label for="ano">3. Año:</label>
+                <input type="number" id="ano" name="ano" min="2024" max="2100" required>
+            </div>
+            <div class="form-group">
+                <label for="fecha">4. Fecha:</label>
+                <input type="date" id="fecha" name="fecha" required>
+            </div>
+            <div class="form-group">
+                <label for="fotoBeneficiario">Foto del Beneficiario:</label>
+                <input type="file" id="fotoBeneficiario" name="fotoBeneficiario" accept="image/*" required>
+            </div>
+        </div>
+        <h2>I. Información del Beneficiario</h2>
+        <div class="inline-group">
+        <div class="form-group">
+            <label for="primerNombre">Primer Nombre:</label>
+            <input type="text" id="primerNombre" name="primerNombre" required>
+        </div>
+        <div class="form-group">
+            <label for="segundoNombre">Segundo Nombre:</label>
+            <input type="text" id="segundoNombre" name="segundoNombre">
+        </div>
+        <div class="form-group">
+            <label for="primerApellido">Primer Apellido:</label>
+            <input type="text" id="primerApellido" name="primerApellido" required>
+        </div>
+        <div class="form-group">
+            <label for="segundoApellido">Segundo Apellido:</label>
+            <input type="text" id="segundoApellido" name="segundoApellido">
+        </div>
+    </div>
+        <h2>IV. Aviso de Privacidad</h2>
+        <p>La Corporación Batuta Meta informa que los datos personales que se están recolectando tendrán un uso responsable y tienen como finalidad la validación de beneficiarios, análisis estadístico y/o demográfico, la elaboración de indicadores y soportar el cumplimiento de obligaciones contractuales con entidades públicas y empresas privadas. En todo momento como titular de la información podrá conocer, actualizar y rectificar esta información, dirigiéndose a nuestro correo electrónico batutameta@gmail.com o personalmente en la Calle 46 No. 28-20 Villavicencio, línea nacional (8) 6848304.</p>
+        <p>La Corporación Batuta Meta se reserva el derecho de verificar los datos suministrados para la admisión; en caso de descubrir alguna falsedad en estos, tendrá la potestad de invalidar la inscripción y otorgar el cupo a otra persona.</p>
+        <p>En caso de que el beneficiario adelante, realice o promueva actividades que atenten contra el buen nombre de La Corporación Batuta Meta o de sus directivos o trabajadores, esta corporación tendrá la potestad de invalidar y/o cancelar la inscripción y otorgará el cupo a otro beneficiario.</p>
+        <div class="form-group">
+            <label><input type="checkbox" name="acepto_terminos" required> Acepto los términos y condiciones</label>
+        </div>
+        <div class="form-group">
+            <button type="submit">Enviar Inscripción</button>
+        </div>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
